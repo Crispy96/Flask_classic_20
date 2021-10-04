@@ -1,9 +1,10 @@
 #creamos las rutas de inicio y de otros movimientos
 from balance import app
+from flask import render_template
 
 @app.route("/")
 def inicio():
-    return "Paguina de inicio"
+    return render_template("inicio.html")
 
 @app.route("/nuevo", methods=["GET", "POST"])
 def nuevo():
