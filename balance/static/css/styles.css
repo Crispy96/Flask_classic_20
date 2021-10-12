@@ -47,8 +47,7 @@ table.paper {
 } 
 
 .error {
-      background-color: #ffaaaa;
       color: darkred;
-      font-size: 2rem;
+      font-size: 0.8rem;
       font-weight: blond;
 }

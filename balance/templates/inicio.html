@@ -8,6 +8,7 @@
             {% else %}
             <table class="paper">
                 <tr>
+                    <th>ID</th>
                     <th>Fecha</th>
                     <th>Concepto</th>
                     <th>I/G</th>
@@ -15,6 +16,7 @@
                 </tr>
                 {% for item in items %}
                 <tr>
+                    <td>{{ item.id }}</td>
                     <td>{{ item.fecha }}</td>
                     <td>{{ item.concepto }}</td>
                     <td>{% if item.ingreso_gasto == 'I' %} 
